@@ -1,0 +1,274 @@
+body {
+	text-align: center;
+	background-image: url('splash.jpg');
+	}
+
+#background {
+	background: black;
+	text-align: left;
+ 	width: 960px;
+ 	margin: 0 auto;
+
+}
+
+#map-canvas {
+    background-color: #CCC;
+    position: absolute;
+	width: 330px;
+	height: 250px;
+	top: 300px;
+	margin-left: 70px;
+  }
+ 
+/* ------Home Page----- */ 
+.homePage {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: -10px;
+	margin-left: 150px;
+	background:#cccccc;
+	opacity: 0.89;
+	font: 45px/0px 'Six Caps', sans-serif;
+	text-align:center;
+	}
+
+  
+/* ------core----- */
+	
+.menuBarCore {
+	position: absolute;
+	width: 600px;
+	height: 45px;
+	top: 125px;
+	margin-left: 20px;
+	background:#ffcc99;
+	opacity: 0.89;
+	font: 23px/0px 'Oleo Script Swash Caps', cursive;
+	text-align:center;
+	}
+	
+.menuCoreTextBox {
+	position: absolute;
+	/*width:575px;
+	height: 320px;*/
+	width:520px;
+	height: 280px;
+	top: 220px;
+	margin-left: 410px;
+	background:#ffcc99;
+	opacity: 0.85;
+	font: 15px/18px Georgia, Times, "Times New Roman", serif;
+	
+}
+/* ------Albania - Tirana----- */
+
+
+.menuBarAlbania {
+	position: absolute;
+	width: 600px;
+	height: 45px;
+	top: 0px;
+	margin-left: 330px;
+	background:#cccccc;
+	opacity: 0.89;
+	font: 26px/0px 'Ruge Boogie', cursive;
+	text-align:center;
+	}
+	
+.menuAlbaniaTextBox {
+	position: absolute;
+	width:480px;
+	height: 140px;
+	top: 135px;
+	margin-left: 20px;
+	background: white;
+	opacity: 0.85;
+	font: 15px/18px Georgia, Times, "Times New Roman", serif;
+	
+}
+
+/* ------France - Paris----- */
+
+.menuBarFrance {
+	position: absolute;
+	width: 600px;
+	height: 45px;
+	top: 0px;
+	margin-left: 330px;
+	background:#cccccc;
+	opacity: 0.89;
+	font: 26px/0px 'Ruge Boogie', cursive;
+	text-align:center;
+	}
+	
+.menuFranceTextBox {
+	position: absolute;
+	width:450px;
+	height: 120px;
+	top: 160px;
+	margin-left: 20px;
+	background: #FF9966;
+	opacity: 0.85;
+	font: 15px/18px Georgia, Times, "Times New Roman", serif;
+	
+}
+
+/* ------Scotland - Edinburgh----- */
+
+.menuBarScotland {
+	position: absolute;
+	width: 600px;
+	height: 45px;
+	top: 0px;
+	margin-left: 330px;
+	background:#cccccc;
+	opacity: 0.89;
+	font: 26px/0px 'Ruge Boogie', cursive;
+	text-align:center;
+	}
+	
+.menuScotlandTextBox {
+	position: absolute;
+	width:600px;
+	height: 180px;
+	top: 100px;
+	margin-left: 20px;
+	background: #669966;
+	opacity: 0.85;
+	font: 15px/18px Georgia, Times, "Times New Roman", serif;
+	
+}
+
+/* ------Spain - Barcelona----- */
+
+.menuBarSpain {
+	position: absolute;
+	width: 600px;
+	height: 45px;
+	top: 0px;
+	margin-left: 330px;
+	background:#cccccc;
+	opacity: 0.89;
+	font: 26px/0px 'Ruge Boogie', cursive;
+	text-align:center;
+	}
+	
+.menuSpainTextBox {
+	position: absolute;
+	width:520px;
+	height: 120px;
+	top: 160px;
+	margin-left: 20px;
+	background: #FFCC33;
+	opacity: 0.85;
+	font: 15px/18px Georgia, Times, "Times New Roman", serif;
+	
+}
+
+/* ------New York - New York City----- */
+
+
+.menuBarNewYork {
+	position: absolute;
+	width: 600px;
+	height: 45px;
+	top: 0px;
+	margin-left: 330px;
+	background:#cccccc;
+	opacity: 0.89;
+	font: 26px/0px 'Ruge Boogie', cursive;
+	text-align:center;
+	}
+	
+.menuNewYorkTextBox {
+	position: absolute;
+	width:570px;
+	height: 140px;
+	top: 135px;
+	margin-left: 20px;
+	background: white;
+	opacity: 0.85;
+	font: 15px/18px Georgia, Times, "Times New Roman", serif;
+	
+}
+
+/* ------Germany - Berlin----- */
+
+.menuBarGermany {
+	position: absolute;
+	width: 600px;
+	height: 45px;
+	top: 0px;
+	margin-left: 330px;
+	background:#cccccc;
+	opacity: 0.89;
+	font: 26px/0px 'Ruge Boogie', cursive;
+	text-align:center;
+	}
+	
+.menuGermanyTextBox {
+	position: absolute;
+	width:600px;
+	height: 180px;
+	top: 100px;
+	margin-left: 20px;
+	background: #339966;
+	opacity: 0.85;
+	font: 15px/18px Georgia, Times, "Times New Roman", serif;
+	
+}
+
+/* ----------- */
+
+#core h1 {font-family: 'Oleo Script Swash Caps', cursive;}	
+#program h1 {font-family: 'Ruge Boogie', cursive;}
+
+/* ----------- */
+
+#corel a:link {
+	color:#000;
+	text-decoration:none; 
+	}
+
+#corel a:visited {
+	color:#000;
+	text-decoration:none;
+	}
+
+#corel a:hover {
+	color:#900;
+	text-decoration:none;
+	}
+
+#corel a:active {
+	color:#ffcc99;
+	text-decoration:none;
+	}
+
+/* ----------- */
+
+#programl a:link {
+	color:#000;
+	text-decoration:none; 
+	}
+
+#programl a:visited {
+	color:#000;
+	text-decoration:none;
+	}
+
+#programl a:hover {
+	color: white;
+	text-decoration:none;
+	}
+
+#programl a:active {
+	color:#666633;
+	text-decoration:none;
+	}
+
+/* ----------- */
+
+#programH {
+	color:#cc6633}

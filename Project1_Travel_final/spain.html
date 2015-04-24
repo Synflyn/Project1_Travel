@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<title>6 Places to Go</title>
+<!-- ============================================================== -->
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="description" content="6 Places to Go" />
+<!-- ============================================================== -->
+
+<link rel="stylesheet" type="text/css" href="Travel.css" />
+
+<link href='http://fonts.googleapis.com/css?family=Ruge+Boogie' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Just+Another+Hand|Oleo+Script+Swash+Caps|Ruge+Boogie|Six+Caps' rel='stylesheet' type='text/css'>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+
+
+<script>
+var map;
+var infowindow;
+var service;
+var myLocation;
+var marker;
+
+function initialize() {	
+	//myLocation = new google.maps.LatLng(41.3260, 19.8160);
+	myLocation = new google.maps.LatLng(41.3833, 2.1833);	
+	
+	map = new google.maps.Map(document.getElementById('map-canvas'), {
+		center: myLocation,
+		zoom: 15
+	});
+
+	var request = {
+		location: myLocation,
+		radius: 500,
+		types: ['restaurant','hotel']
+	};
+
+	service = new google.maps.places.PlacesService(map);
+	service.nearbySearch(request, callback);
+
+	function callback(results, status) {
+		if (status == google.maps.places.PlacesServiceStatus.OK) {
+			for (var i = 0; i < 10; i++) {
+				marker = new google.maps.Marker({
+					map: map,
+					position: results[i].geometry.location
+				});
+                marker.info = new google.maps.InfoWindow({
+                content: results[i].name + "<br />" + "Rating : " + results[i].rating + "<br />" + "<img src='"+results[i].photos[0].getUrl({'maxWidth': 100,   'maxHeight':100})+"'/>"
+                 });
+				//infowindow = new google.maps.InfoWindow();
+				//infowindow.setContent(results[i].name + "<br />" + "Rating : " + results[i].rating + "<br />" + "<img src='"+results[i].photos[0].getUrl({'maxWidth': 100, 'maxHeight': 100})+"'/>");
+               google.maps.event.addListener(marker, 'click', function() {
+               this.info.open(map,this);
+                });
+				//infowindow.open(marker);
+			}
+		}
+	}
+   
+}
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+</script>
+</head>
+
+
+<body id=background>
+<img src="Barcelona.jpg" width="960" height="578">
+
+<div class="homePage" id="programl">
+<p><a href="home.html">6 Places Home</a></p>
+</div>
+
+<div class="menuBarSpain" id="programl">
+<p><a href="albania.html">Albania</a> &nbsp;&nbsp;&nbsp; <a href="france.html">France</a> &nbsp;&nbsp;&nbsp; <a href="germany.html">Germany</a> &nbsp;&nbsp;&nbsp; <a href="scotland.html">Scotland</a> &nbsp;&nbsp;&nbsp; <em id="programH">Spain</em> &nbsp;&nbsp;&nbsp; <a href="newyork.html">New York</a></p>
+</div>
+
+
+<div id="map-canvas">
+</div>
+
+
+<div class="menuSpainTextBox" id="program">
+<h1>Welcome to Barcelona, a city in Spain</h1>
+
+<p>
+---> Barcelona has 12 abandoned metro stations and they are HAUNTED!
+<br>&nbsp;<br>
+---> The Sagrada Familia has taken longer to build than the great pyramids.
+</div>
+
+</body>
+</html>
